@@ -1,6 +1,6 @@
 from keras.datasets import mnist
 from keras.models import Sequential, Model
-from keras.layers import Dense, Conv2D, BatchNormalization, ReLU, Add, Input, Flatten, merge
+from keras.layers import Dense
 from keras.utils import np_utils
 import matplotlib.pyplot as plt
 import numpy as np
