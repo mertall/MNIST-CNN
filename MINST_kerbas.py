@@ -123,7 +123,7 @@ def evaluate(model,batch_size=128,epochs=5):
     history = model.fit(xtrain,ytrain,validation_split=0.1,epochs=epochs,batch_size=batch_size,verbose=False)
     loss, accuracy = model.evaluate(xtest,ytest,verbose=False)
     #categorical_crossentropy: utlized as our categories are one-hot encoded, best optimization score function for our situation
-    #sgd vs adam: sgd gave lower accuracy in 5 layer model (which is expected as it should be overfitted) but adam gave same result even on 5 layer, facisinating...\
+    #sgd vs adam: sgd gave lower accuracy in 5 layer model (which is expected as it should be overfitted) but adam gave better results even on 5 layer, facisinating...\
     
 
     plt.plot(history.history['acc'])
